@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :admins, path: 'admin', skip: :registrations
   root 'pages#home'
   get 'home' => 'pages#home'
   get 'about' => 'pages#about'
