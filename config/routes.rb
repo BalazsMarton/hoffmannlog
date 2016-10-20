@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  namespace :admin do
+
+  end
+
   devise_for :admins, path: 'admin', skip: :registrations
   root 'pages#home'
   get 'home' => 'pages#home'
