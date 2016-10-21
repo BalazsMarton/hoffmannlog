@@ -1,4 +1,4 @@
-class Admin::CollaboratorsController < AdminController
+class Admin::CollaboratorsController < Admin::AdminController
   before_action :set_collaborator, only: [:show, :edit, :update, :destroy]
 
   # GET /collaborators
