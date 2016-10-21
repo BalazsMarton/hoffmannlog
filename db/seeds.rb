@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Pagescontent.create(name: 'home', content: '<p>Lorem ipsum</p>')
+Pagescontent.create(name: 'about', content: '<p>Lorem ipsum</p>')
+Pagescontent.create(name: 'carrier', content: '<p>Lorem ipsum</p>')
+Pagescontent.create(name: 'company', content: '<p>Lorem ipsum</p>')

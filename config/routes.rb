@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   
   namespace :admin do
     resources :collaborators
+    resources :pagescontents
   end
   get 'admin' => 'admin/collaborators#index'
 
