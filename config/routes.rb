@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 
+  
   namespace :admin do
-
+    resources :collaborators
   end
+  get 'admin' => 'admin/collaborators#index'
 
   devise_for :admins, path: 'admin', skip: :registrations
   root 'pages#home'

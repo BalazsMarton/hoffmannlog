@@ -1,0 +1,23 @@
+<h1>Team</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Title</th>
+      <th>Email</th>
+      <th>Image</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @collaborators.each do |collaborator| %>
+      <tr>
+        <td><%= collaborator.name %></td>
+        <td><%= collaborator.title %></td>
+        <td><%= collaborator.email %></td>
+        <td><%= collaborator.image %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
