@@ -1,4 +1,6 @@
 class Admin::PagescontentsController < Admin::AdminController
+	before_action :set_pagescontent, only: [:show, :edit, :update]
+
 	def index
 		@pagescontents = Pagescontent.all
 	end
@@ -7,7 +9,28 @@ class Admin::PagescontentsController < Admin::AdminController
   	end
 
   	def show
-  		@pagescontents = Pagescontent.find(params[:id])
   	end
 
+	def update
+		pagescontents_params = params.require(:pagescontent).permit(:name, :content, :image)
+	 	
+	 	@pagescontents.update(pagescontents_params)
+		 respond_to do |format|
+		 	if @pagescontents.update(pagescontents_params)
+				format.html { redirect_to [:admin, @pagescontents], notice: 'Page content was successfully created.' }
+			else
+				format.html { render :edit }
+			end
+		 end
+	end
+
+	private
+
+	def set_pagescontent
+		@pagescontents = Pagescontent.find(params[:id])
+	end
+
+	def pagescontents_params
+		params.require(:pagescontent).permit(:name, :content)
+	end
 end

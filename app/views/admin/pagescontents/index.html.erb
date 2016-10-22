@@ -1,5 +1,4 @@
 <h1>Page Contents</h1>
-
 <table>
   <thead>
     <tr>
@@ -14,7 +13,7 @@
       <tr>
         <td><%= pagescontent.image %></td>
         <td><%= pagescontent.name %></td>
-        <td><%= pagescontent.content %></td>
+        <td><%= strip_tags raw pagescontent.content.truncate(250) %></td>
         <td><%= link_to 'Show', [:admin, pagescontent] %></td>
         <td><%= link_to 'Edit', edit_admin_pagescontent_path(pagescontent) %></td>
       </tr>
