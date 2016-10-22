@@ -25,6 +25,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 #Admin Authentication
 gem 'devise'
+#Materializecss framework for frontend dev
+gem 'materialize-sass'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
