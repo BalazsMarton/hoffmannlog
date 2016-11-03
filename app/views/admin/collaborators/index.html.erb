@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Collaborators</h1>
-
-<table>
+<%= link_to 'New Collaborator', new_admin_collaborator_path %>
+<table class="highlight">
   <thead>
     <tr>
       <th>Name</th>
@@ -27,7 +27,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Collaborator', new_admin_collaborator_path %>

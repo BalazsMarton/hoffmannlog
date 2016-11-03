@@ -1,3 +1,6 @@
+body{
+	background-color:white;
+}
 /*FOOTER*/
 footer.page-footer{
 	margin:0;
@@ -9,4 +12,9 @@ footer.page-footer{
 	.container .row .col{
 		padding-top:0.5em;
 	}
+}
+
+#parallax-container {
+    min-height: 380px !important;
+    height:0;
 }

@@ -1,11 +1,2 @@
-<% @pagescontents.each do |pagescontent| %>
-<p>
-  <strong>Name:</strong>
-  <%= pagescontent.name %>
-</p>
-
-<p>
-  <strong>Content:</strong>
-  <%= pagescontent.content %>
-</p>
-<% end %>
+<%= render 'pages/parallax' %>
+<%= render 'pages/pagescontent' %>

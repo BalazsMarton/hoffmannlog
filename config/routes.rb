@@ -4,9 +4,11 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :collaborators
     resources :pagescontents, only: [:index, :show, :edit, :update]
+
   end
-  get 'admin' => 'admin/collaborators#index'
+  get 'admin' => 'admin/pagescontents#index'
   devise_for :admins, path: 'admin', skip: :registrations
+  
   
   root 'pages#home'
   get 'home' => 'pages#home'

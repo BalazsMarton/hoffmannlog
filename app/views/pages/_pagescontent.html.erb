@@ -1,0 +1,8 @@
+<% @pagescontents.each do |pagescontent| %>
+<div class="container">
+<p>
+  <strong>Content:</strong>
+  <%= raw pagescontent.content.html_safe %>
+</p>
+</div>
+<% end %>

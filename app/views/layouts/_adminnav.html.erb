@@ -1,6 +1,31 @@
-<p>adminnavbar</p>
-<ul class="nav navbar-nav navbar-right">
-    <% if admin_signed_in? %>
+<div class="navbar-fixed">
+  <nav class="light-blue darken-3">
+    <div class="nav-wrapper container">
+      <%= link_to admin_path, class: 'brand-logo', id: 'logo-container' do %>
+        Hoffmannlog Admin
+      <% end %>
+      <ul class="right hide-on-med-and-down">
+		<li class="<%= 'active' if current_page?(admin_pagescontents_path) %>"><%= link_to 'Pages', admin_pagescontents_path %></li>
+		<li class="<%= 'active' if current_page?(admin_collaborators_path) %>"><%= link_to 'Collaborators', admin_collaborators_path %></li>
+
+		<% if admin_signed_in? %>
+   		<li><%= link_to 'Sign out', destroy_admin_session_path, method: :delete %></li>
+   		 <% else %>
+    	<li><%= link_to 'Sign in', new_admin_session_path %></li>
+    	<% end %>
+      </ul>
+
+            
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</div>
+
+<ul id="nav-mobile" class="side-nav">
+	<li class="<%= 'active' if current_page?(admin_pagescontents_path) %>"><%= link_to 'Pages', admin_pagescontents_path %></li>
+	<li class="<%= 'active' if current_page?(admin_collaborators_path) %>"><%= link_to 'Collaborators', admin_collaborators_path %></li>
+
+	<% if admin_signed_in? %>
     <li><%= link_to 'Sign out', destroy_admin_session_path, method: :delete %></li>
     <% else %>
     <li><%= link_to 'Sign in', new_admin_session_path %></li>

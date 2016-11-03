@@ -21,7 +21,7 @@ class PagesController < ApplicationController
 	end
 
 	def company
-		@pagescontents = Pagescontent.where(:id => '8')
+		@pagescontents = Pagescontent.where(:id => '4')
 	end
 
 end
