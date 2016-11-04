@@ -5,7 +5,7 @@ document.addEventListener("turbolinks:load", function() {
 	$('.parallax').parallax();
 
 	$('.slider').slider({
-		height: 600,
+		height: 380,
 	});
 
 	// Initialize collapse button

@@ -1,5 +1,6 @@
+<div class="" id="slideshow-wrap">
 <div class="slider">
-  <ul class="slides">
+  <ul class="slides light-blue darken-3">
   <% @collaborators.each do |collaborator| %>
     <li>
       <%= image_tag collaborator.image.medium %>
@@ -10,6 +11,7 @@
     </li>
   <% end %>
   </ul>
+</div>
 </div>
 
 <div class="container">
