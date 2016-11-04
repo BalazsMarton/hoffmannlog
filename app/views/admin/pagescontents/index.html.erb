@@ -11,7 +11,7 @@
   <tbody>
     <% @pagescontents.each do |pagescontent| %>
       <tr>
-        <td><%= pagescontent.image %></td>
+        <td><%= image_tag pagescontent.image.thumb %></td>
         <td><%= pagescontent.name %></td>
         <td><%= strip_tags raw pagescontent.content.truncate(250) %></td>
         <td><%= link_to 'Show', [:admin, pagescontent] %></td>

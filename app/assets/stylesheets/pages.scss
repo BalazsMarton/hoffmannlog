@@ -15,11 +15,12 @@ footer.page-footer{
 }
 
 #parallax-container {
-    min-height: 380px !important;
+	background-color:rgba(0,0,0,0.3);
+    min-height: 600px !important;
     height:0;
     .no-pad-bot{
     	width:100%;
-    	h5{
+    	h1,h2,h3,h4,h5{
     		color:white;
     	}
     }
@@ -31,4 +32,20 @@ footer.page-footer{
 	background-position: center;
 	height:100%;
 	width: 250px;
+}
+
+#avatar{
+	max-height:150px;
+}
+#parallax-img{
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+
+#caption{
+	top:initial !important;
+	bottom:10% !important;
 }

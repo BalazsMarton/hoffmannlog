@@ -4,6 +4,10 @@ document.addEventListener("turbolinks:load", function() {
 	// Parallax effect
 	$('.parallax').parallax();
 
+	$('.slider').slider({
+		height: 600,
+	});
+
 	// Initialize collapse button
 	$('.button-collapse').sideNav({
       menuWidth: 200, // Default is 240

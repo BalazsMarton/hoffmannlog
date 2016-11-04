@@ -5,10 +5,10 @@
 <table class="highlight">
   <thead>
     <tr>
+      <th>Image</th>
       <th>Name</th>
       <th>Title</th>
       <th>Email</th>
-      <th>Image</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,10 +16,10 @@
   <tbody>
     <% @collaborators.each do |collaborator| %>
       <tr>
+        <td><%= image_tag collaborator.image.thumb %></td>
         <td><%= collaborator.name %></td>
         <td><%= collaborator.title %></td>
         <td><%= collaborator.email %></td>
-        <td><%= collaborator.image %></td>
         <td><%= link_to 'Show', [:admin, collaborator] %></td>
         <td><%= link_to 'Edit', edit_admin_collaborator_path(collaborator) %></td>
         <td><%= link_to 'Destroy', [:admin, collaborator], method: :delete, data: { confirm: 'Are you sure?' } %></td>

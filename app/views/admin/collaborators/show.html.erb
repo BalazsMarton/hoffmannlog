@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
-
+<p>
+  <strong>Image:</strong><br>
+  <%= image_tag @collaborator.image.thumb %>
+</p>
 <p>
   <strong>Name:</strong>
   <%= @collaborator.name %>
@@ -15,10 +18,7 @@
   <%= @collaborator.email %>
 </p>
 
-<p>
-  <strong>Image:</strong>
-  <%= @collaborator.image %>
-</p>
+
 
 <%= link_to 'Edit', edit_admin_collaborator_path(@collaborator) %> |
 <%= link_to 'Back', admin_collaborators_path %>

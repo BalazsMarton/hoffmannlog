@@ -28,7 +28,7 @@ class Admin::CollaboratorsController < Admin::AdminController
 
     respond_to do |format|
       if @collaborator.save
-        format.html { redirect_to [:admin, @admin_collaborator], notice: 'Collaborator was successfully created.' }
+        format.html { redirect_to [:admin, @collaborator], notice: 'Collaborator was successfully created.' }
         format.json { render :show, status: :created, location: @collaborator }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class Admin::CollaboratorsController < Admin::AdminController
   def update
     respond_to do |format|
       if @collaborator.update(collaborator_params)
-        format.html { redirect_to [:admin, @admin_collaborator], notice: 'Collaborator was successfully updated.' }
+        format.html { redirect_to [:admin, @collaborator], notice: 'Collaborator was successfully updated.' }
         format.json { render :show, status: :ok, location: @collaborator }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class Admin::CollaboratorsController < Admin::AdminController
   def destroy
     @collaborator.destroy
     respond_to do |format|
-      format.html { redirect_to [:admin, @admin_collaborator], notice: 'Collaborator was successfully destroyed.' }
+      format.html { redirect_to [:admin, @collaborator], notice: 'Collaborator was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
