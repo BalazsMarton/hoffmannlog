@@ -1,10 +1,10 @@
-<div class="" id="slideshow-wrap">
+<div class="light-blue darken-4" id="slideshow-wrap">
 <div class="container">
 <div class="slider">
-  <ul class="slides light-blue darken-3">
+  <ul class="slides">
   <% @collaborators.each do |collaborator| %>
     <li>
-      <%= image_tag collaborator.image.medium %>
+      <%= image_tag collaborator.image, class: 'responsive-img greyscale'%>
       <div class="caption right-align" id="caption">
         <h3><strong><%= collaborator.name %></strong></h3>
         <h5 class="light grey-text text-lighten-3"><strong><%= collaborator.title %></strong></h5>
@@ -23,12 +23,12 @@
     <div class="col l12 s12">
       <div class="row" id="nevjegykartyak">
         <% @collaborators.each do |collaborator| %>
-        <div class="col l4 s12 center">
+        <div class="col l4 m4 s12 center">
           <%= image_tag collaborator.image.medium, class: 'circle responsive-img', id: 'avatar' %>
           <p class="grey-text">
           <%= collaborator.name %><br>
           <%= collaborator.title %><br>
-          <a class="blue-text text-darken-4" href="<%= collaborator.email %>">@<%= collaborator.name %></a> 
+          <a class="blue-text text-darken-4" href="mailto:<%= collaborator.email %>">@<%= collaborator.name %></a> 
           </p>
         </div>
         <% end %>

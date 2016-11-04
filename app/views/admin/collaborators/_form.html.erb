@@ -1,3 +1,4 @@
+<div class="col s12 m6 l6">
 <%= form_for([:admin, @collaborator]) do |f| %>
   <% if @collaborator.errors.any? %>
     <div id="error_explanation">
@@ -10,24 +11,27 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+  
+  <div class="row">
+  <div class="input-field col s12 m12 l12">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
-  <div class="field">
+  <div class="input-field col s12 m12 l12">
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </div>
-  <div class="field">
+  <div class="input-field col s12 m12 l12">
     <%= f.label :email %><br>
-    <%= f.text_field :email %>
+    <%= f.text_field :email  %>
   </div>
-  <div class="field">
+  <div class="col s12 m12 l12">
     <%= f.label :image %><br>
     <%= f.file_field :image %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="actions col s12 m12 l12 center">
+    <%= f.submit class: 'waves-effect waves-light btn' %>
+  </div>
   </div>
 <% end %>
+</div>

@@ -1,22 +1,31 @@
-<h1>Page Contents</h1>
-<table class="highlight">
-  <thead>
-    <tr>
-    	<th>Image</th>
-      	<th>Page</th>
-      	<th>Content</th>
-      	<th colspan="2"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @pagescontents.each do |pagescontent| %>
-      <tr>
-        <td><%= image_tag pagescontent.image.thumb %></td>
-        <td><%= pagescontent.name %></td>
-        <td><%= strip_tags raw pagescontent.content.truncate(250) %></td>
-        <td><%= link_to 'Show', [:admin, pagescontent] %></td>
-        <td><%= link_to 'Edit', edit_admin_pagescontent_path(pagescontent) %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="row">
+
+  <div class="col s12 m12 l12">
+    <h3>Page Contents</h3>
+  </div>  
+
+  <div class="col s12 m12 l12 table-responsive">
+    <table class="highlight">
+      <thead>
+        <tr>
+        	<th>Image</th>
+          <th>Page</th>
+          <th>Content</th>
+          <th colspan="2"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @pagescontents.each do |pagescontent| %>
+          <tr>
+            <td><%= image_tag pagescontent.image.thumb, class: 'responsive-img' %></td>
+            <td><%= pagescontent.name %></td>
+            <td><%= strip_tags raw pagescontent.content.truncate(250) %></td>
+            <td><%= link_to 'Show', [:admin, pagescontent] %></td>
+            <td><%= link_to 'Edit', edit_admin_pagescontent_path(pagescontent) %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
+</div>

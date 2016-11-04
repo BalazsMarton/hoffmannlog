@@ -1,18 +1,27 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+	<div class="col s12 m12 l12">
+		<p id="notice"><%= notice %></p>
+	</div>
+	<div class="col s12 m12 l12">
+		<%= link_to 'Back', admin_pagescontents_path %> | 
+		<%= link_to 'Edit', edit_admin_pagescontent_path(@pagescontents) %>
+	</div>
+	<div class="col s12 m12 l6">
+		<strong>Image:</strong><br>
+  		<%= image_tag @pagescontents.image.medium, class: 'responsive-img' %>
+	</div>
+	<div class="col s12 m12 l6">
+		<p>
+		  <strong>Name:</strong>
+		  <%= @pagescontents.name %>
+		</p>
 
-<p>
-  <strong>Image:</strong>
-  <%= image_tag @pagescontents.image, class: 'responsive-img' %>
-</p>
-<p>
-  <strong>Name:</strong>
-  <%= @pagescontents.name %>
-</p>
+		<p>
+		  <strong>Content:</strong>
+		  <%= raw @pagescontents.content.html_safe %>
+		</p>
+	</div>
+</div>
 
-<p>
-  <strong>Content:</strong>
-  <%= @pagescontents.content %>
-</p>
 
-<%= link_to 'Edit', edit_admin_pagescontent_path(@pagescontents) %>
-<%= link_to 'Back', admin_pagescontents_path %>
+
