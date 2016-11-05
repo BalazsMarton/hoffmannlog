@@ -1,4 +1,8 @@
 document.addEventListener("turbolinks:load", function() {
+    //CKEDITOR
+    if ($('.ckeditor')[0]) {
+        CKEDITOR.replace($('.ckeditor').attr('id'));
+    };
 	//MATERIALIZE JS
 	//
 	// Parallax effect

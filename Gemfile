@@ -31,6 +31,10 @@ gem 'materialize-sass'
 #image upload
 gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
 gem 'mini_magick'
+
+#ckeditor
+gem 'ckeditor', github: 'galetahub/ckeditor'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
