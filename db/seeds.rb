@@ -27,17 +27,17 @@ Pagescontent.create(name: 'company', content:
 	'
 	<div class="row">
 <div class="col s12 m12 l12">
-<div class="map-responsive"><iframe allowfullscreen="" frameborder="0" height="350" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1shu!2shu!4v1478312204077!6m8!1m7!1s6OLq001KHiI-d4Yum5BgYQ!2m2!1d47.32362702739723!2d18.96347227782309!3f165.94853713811875!4f-6.494497271865768!5f1.4181575885883535" style="border:0; width:100%;" width="1500"></iframe></div>
-
-<hr /></div>
-
-<div class="col s12 m12 l12">
 <h3 class="center"><span style="color:#696969;"><strong>Hoffmann Logistics kft.</strong></span></h3>
 
 <hr /></div>
 
+<div class="col s12 m12 l12">
+<div class="map-responsive"><iframe allowfullscreen="" frameborder="0" height="350" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1shu!2shu!4v1478312204077!6m8!1m7!1s6OLq001KHiI-d4Yum5BgYQ!2m2!1d47.32362702739723!2d18.96347227782309!3f165.94853713811875!4f-6.494497271865768!5f1.4181575885883535" style="border:0; width:100%;" width="1500"></iframe></div>
+
+<hr /></div>
+
 <div class="col s12 m8 l8 offset-l2 offset-m2">
-<h5 class="center"><span style="color:#696969;"><strong>Company details</strong></span></h5>
+<h5><span style="color:#696969;"><strong>Company details</strong></span></h5>
 </div>
 
 <div class="col s12 m8 l8 offset-l2 offset-m2 table-responsive">
@@ -76,7 +76,7 @@ Pagescontent.create(name: 'company', content:
 </div>
 
 <div class="col s12 m8 l8 offset-l2 offset-m2">
-<h5 class="center"><span style="color:#696969;"><strong>Bank details HUF</strong></span></h5>
+<h5><span style="color:#696969;"><strong>Bank details HUF</strong></span></h5>
 </div>
 
 <div class="col s12 m8 l8 offset-l2 offset-m2 table-responsive">
@@ -103,7 +103,7 @@ Pagescontent.create(name: 'company', content:
 </div>
 
 <div class="col s12 m8 l8 offset-l2 offset-m2">
-<h5 class="center"><span style="color:#696969;"><strong>Bank details EUR</strong></span></h5>
+<h5><span style="color:#696969;"><strong>Bank details EUR</strong></span></h5>
 </div>
 
 <div class="col s12 m8 l8 offset-l2 offset-m2 table-responsive">
@@ -130,7 +130,7 @@ Pagescontent.create(name: 'company', content:
 </div>
 
 <div class="col s12 m8 l8 offset-l2 offset-m2">
-<h5 class="center"><span style="color:#696969;"><strong>Contacts</strong></span></h5>
+<h5><span style="color:#696969;"><strong>Contacts</strong></span></h5>
 </div>
 
 <div class="col s12 m8 l8 offset-l2 offset-m2 table-responsive">
