@@ -32,7 +32,7 @@ gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
 gem 'mini_magick'
 
 #ckeditor
-gem 'ckeditor'
+gem 'ckeditor', github: 'galetahub/ckeditor'
 
 #secret keys
 gem "figaro"
