@@ -66,4 +66,6 @@ group :production do
   gem 'pg'
   #heroku
   gem 'rails_12factor'
+  # Use Uglifier as compressor for JavaScript assets
+  gem 'uglifier', '>= 1.3.0'
 end
