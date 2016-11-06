@@ -35,7 +35,10 @@ gem 'mini_magick'
 #ckeditor
 gem 'ckeditor', github: 'galetahub/ckeditor'
 
+#secret keys
 gem "figaro"
+#amazon s3
+gem "fog"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
