@@ -32,7 +32,7 @@ gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
 gem 'mini_magick'
 
 #ckeditor
-gem 'ckeditor', github: 'galetahub/ckeditor'
+gem 'ckeditor'
 
 #secret keys
 gem "figaro"
@@ -66,6 +66,4 @@ group :production do
   gem 'pg'
   #heroku
   gem 'rails_12factor'
-  # Use Uglifier as compressor for JavaScript assets
-  gem 'uglifier', '>= 1.3.0'
 end
