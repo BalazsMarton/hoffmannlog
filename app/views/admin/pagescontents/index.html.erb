@@ -1,5 +1,9 @@
 <div class="row">
-
+  <% if flash.any? %>
+    <script type="text/javascript">
+      $(function(){Materialize.toast("<%= notice %>", 8000);});
+    </script>
+  <% end %>
   <div class="col s12 m12 l12">
     <h3 class="df-font-color">Page Contents</h3>
   </div>  
