@@ -2,7 +2,7 @@ class Admin::PagescontentsController < Admin::AdminController
 	before_action :set_pagescontent, only: [:show, :edit, :update]
 
 	def index
-		@pagescontents = Pagescontent.all
+		@pagescontents = Pagescontent.order('id ASC')
 	end
 
 	def edit
