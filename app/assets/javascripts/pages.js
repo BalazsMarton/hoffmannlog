@@ -1,5 +1,6 @@
-document.addEventListener("turbolinks:load", function() {
-    //CKEDITOR
+
+jQuery(document).ready(function($){
+	    //CKEDITOR
     if ($('.ckeditor')[0]) {
         CKEDITOR.replace($('.ckeditor').attr('id'));
     };
