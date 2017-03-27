@@ -11,7 +11,6 @@ document.addEventListener("turbolinks:load", function() {
 	$('.slider').slider({
 		height: 500,
 		indicators: false,
-		verticalSwiping: false
 	});
 
 	// Initialize collapse button
