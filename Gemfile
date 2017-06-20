@@ -39,6 +39,14 @@ gem "figaro"
 #amazon s3
 gem "fog"
 
+# def app server
+gem 'puma'
+#puma heroku gem
+gem 'puma-heroku'
+
+#google analytics
+gem 'google-analytics-rails', '1.1.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
