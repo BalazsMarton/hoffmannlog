@@ -5,24 +5,112 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Pagescontent.create(name: 'home', content: 
+Pagescontent.create(name: 'WELCOME TO HOFFMANN LOGISTICS', content: 
 	'
-	<h1>Home Lorem ipsum</h1>
-	<p>
-	Lorem ipsum dolor sit amet, graecis conceptam an cum. Clita theophrastus cu qui, iusto tractatos at pri. Has ex utinam veritus, nam te interesset appellantur. Vero quas percipitur eu vim. Soluta graeco voluptaria vix ea, an pri liberavisse interpretaris. Modus tritani ius id, decore graecis propriae nec no, no enim offendit maluisset pro.
-	</p>')
+	<div class="row">
+<div class="col s12 m4 l4">
+<p style="color:#696969;text-align:center;"><i class="material-icons large">location_city</i></p>
+
+<p style="text-align: justify;"><strong><span style="font-size:16px;"><span style="color:#696969;">HOFFMANN LOGISTICS is a 3rd party logistic company based in Budapest, Hungary.</span></span></strong></p>
+</div>
+
+<div class="col s12 m4 l4">
+<p style="color:#696969;text-align:center;"><i class="material-icons large">streetview</i></p>
+
+<p style="text-align: justify;"><strong><span style="font-size:16px;"><span style="color:#696969;">Our motivated, multilingual and customer-focused employees apply their knowledge and expertise to every transport challenge and build strong, personalised relationships with the customers they serve.</span></span></strong></p>
+</div>
+
+<div class="col s12 m4 l4">
+<p style="color:#696969;text-align:center;"><i class="material-icons large">local_shipping</i></p>
+
+<p style="text-align: justify;"><strong><span style="font-size:16px;"><span style="color:#696969;">We provide full commitment and quality services to our customers. We move FTL or LTL chilled and ambient loads Europewide. Our dedicated hauliers have box/reefer/tautliner capacity all over Europe - Our task is to find the optimal solution for you to move your goods.</span></span></strong></p>
+</div>
+</div>
+')
 Pagescontent.create(name: 'about', content: 
 	'
-	<h1>About Lorem ipsum</h1>
-	<p>
-	No prima illud mea, eu delenit gubergren vel. Nobis debitis invidunt quo ex, in mei pertinax assentior. Ei prima reque nonumes vis, augue delicatissimi no mel. Et prodesset delicatissimi usu.
-	</p>')
+	<h1 style="text-align: center;"><span style="color:#696969;">About Lorem ipsum</span></h1>
+
+<hr />
+<p style="text-align: justify;"><span style="color:#696969;">No prima illud mea, eu delenit gubergren vel. Nobis debitis invidunt quo ex, in mei pertinax assentior. Ei prima reque nonumes vis, augue delicatissimi no mel. Et prodesset delicatissimi usu.</span></p>
+')
 Pagescontent.create(name: 'carrier', content: 
 	'
-	<h1>Carrier Lorem ipsum</h1>
-	<p>
-	Te vix suavitate vituperatoribus, ea decore tractatos corrumpit eos. Rebum hendrerit urbanitas an pro. Ius animal fierent ponderum ne, te illud dignissim nec, choro argumentum quo at. At suas nihil has. Eam an elitr consul petentium, ad mel delenit moderatius.
-	</p>')
+	<div class="row" style="margin-bottom:0;">
+<div class="col s12 m12 l12" style="padding:0.25rem">
+<div>
+<div style="background-color:#0D47A1; padding:1em 0.5em;">
+<h3 style="text-align: center;"><span style="color:#ffffff;"><strong>Hoffmann Logistics Kft.</strong><br />
+ pályázatot hirdet</span></h3>
+
+<p style="text-align: center;"><span style="color:#ffffff;"><span style="font-size:16px;">tököli központjába <strong>fuvarszervező</strong> munkakör betöltésére</span></span></p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row" style="margin-bottom:0;display: flex;
+    flex-wrap: wrap;">
+<div class="col s12 m6 l6" style="padding:0.25rem">
+<div style="border:1px solid #0D47A1;padding: 0.5em; height:100%; background-color:#01579b;">
+<p style="text-align: center;"><span style="font-size:18px;"><span style="color:#ffffff;"><i class="material-icons large">person_outline</i><br />
+<strong>Amit a sikeres pályázótól elvárunk</strong></span></span></p>
+
+<ul>
+	<li style="text-align: center;"><span style="font-size:16px;"><span style="color:#ffffff;">min. középfokú végzettség</span></span></li>
+	<li style="text-align: center;"><span style="font-size:16px;"><span style="color:#ffffff;">legalább 1-3éves szakmai tapasztalat</span></span></li>
+	<li style="text-align: center;"><span style="font-size:16px;"><span style="color:#ffffff;">angol / német nyelv középszintű ismerete szóban és írásban egyaránt</span></span></li>
+	<li style="text-align: center;"><span style="font-size:16px;"><span style="color:#ffffff;">rugalmasság és hajlandóság a csapatmunkára</span></span></li>
+	<li style="text-align: center;"><span style="font-size:16px;"><span style="color:#ffffff;">középszintű MS Office ismeretek (Excel, Word)</span></span></li>
+	<li style="text-align: center;"><span style="font-size:16px;"><span style="color:#ffffff;">kiváló szervező és kommunikációs képesség</span></span></li>
+	<li style="text-align: center;"><span style="font-size:16px;"><span style="color:#ffffff;">felelősségteljes, önálló, precíz munkavégzés</span></span></li>
+	<li style="text-align: center;"><span style="font-size:16px;"><span style="color:#ffffff;">kiváló feladatmegoldó készség, logikus, gyors gondolkodás</span></span></li>
+</ul>
+</div>
+</div>
+
+<div class="col s12 m6 l6" style="padding:0.25rem">
+<div style="border:1px solid #0D47A1;padding: 0.5em; height:100%; background-color:#01579b;">
+<p style="text-align: center;"><span style="color:#ffffff;"><span style="font-size:18px;"><i class="material-icons large">business</i><br />
+<strong>Feladatok</strong></span></span></p>
+
+<ul>
+	<li style="text-align: center;"><span style="font-size:16px;"><span style="color:#ffffff;">fuvareladás ( rész , komplett és gyűjtőfuvarok bonyolítása )</span></span></li>
+	<li style="text-align: center;"><span style="font-size:16px;"><span style="color:#ffffff;">kapcsolattartás az alvállalkozókkal</span></span></li>
+	<li style="text-align: center;"><span style="font-size:16px;"><span style="color:#ffffff;">adminisztrációs feladatok elvégzése</span></span></li>
+	<li style="text-align: center;"><span style="font-size:16px;"><span style="color:#ffffff;">áru nyomon követése</span></span></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="row" style="display: flex;
+    flex-wrap: wrap;">
+<div class="col m6 l6 s12" style="padding:0.25rem">
+<div style="border:1px solid #0D47A1;padding: 0.5em; height:100%; background-color:#01579b;">
+<p style="text-align: center;"><span style="font-size:18px;"><span style="color:#ffffff;"><i class="material-icons large">sentiment_satisfied</i><br />
+<strong>Amit kínálunk</strong></span></span></p>
+
+<ul>
+	<li style="text-align: center;"><span style="font-size:16px;"><span style="color:#ffffff;">fiatalos, lendületes csapat</span></span></li>
+	<li style="text-align: center;"><span style="font-size:16px;"><span style="color:#ffffff;">versenyképes jövedelem</span></span></li>
+	<li style="text-align: center;"><span style="font-size:16px;"><span style="color:#ffffff;">érdekes és változatos munkavégzés</span></span></li>
+	<li style="text-align: center;"><span style="font-size:16px;"><span style="color:#ffffff;">jó munkahelyi légkör</span></span></li>
+	<li style="text-align: center;"><span style="font-size:16px;"><span style="color:#ffffff;">biztos munkahely</span></span></li>
+	<li style="text-align: center;"><span style="font-size:16px;"><span style="color:#ffffff;">work-life balance biztosítása</span></span></li>
+</ul>
+</div>
+</div>
+
+<div class="col s12 m6 l6" style="padding:0.25rem">
+<div style="border:1px solid #0D47A1;padding: 0.5em; height:100%; background-color:#01579b;">
+<p style="text-align: center;"><span style="font-size:16px;"><span style="color:#ffffff;"><i class="material-icons large">email</i><br />
+Jelentkezés  emailben: </span><a href="mailto:info@hoffmannlogistics.com"><span style="color:#ffffff;">info@hoffmannlogistics.com</span></a><br />
+<span style="color:#ffffff;">melyben csatolni kell: részletes szakmai önéletrajzot fizetési igényének megjelölésével</span></span></p>
+</div>
+</div>
+</div>
+')
 Pagescontent.create(name: 'company', content: 
 	'
 	<div class="row">
@@ -65,65 +153,15 @@ Pagescontent.create(name: 'company', content:
 		</tr>
 		<tr>
 			<td><span style="font-size:16px;"><span style="color:#696969;">Web:</span></span></td>
+			<td><span style="font-size:16px;"><span style="color:#696969;">www.hoffmannlogistics.com</span></span></td>
+		</tr>
+		<tr>
+			<td> </td>
 			<td><span style="font-size:16px;"><span style="color:#696969;">www.hoffmannlogistics.eu</span></span></td>
 		</tr>
 		<tr>
 			<td> </td>
-			<td><span style="font-size:16px;"><span style="color:#696969;">www.hoffmannlogistics.com</span></span></td>
-		</tr>
-	</tbody>
-</table>
-</div>
-
-<div class="col s12 m8 l8 offset-l2 offset-m2">
-<h5><span style="color:#696969;"><strong>Bank details HUF</strong></span></h5>
-</div>
-
-<div class="col s12 m8 l8 offset-l2 offset-m2 table-responsive">
-<table class="highlight centered" id="company-details">
-	<tbody>
-		<tr>
-			<td><span style="font-size:16px;"><span style="color:#696969;">Name of the bank :</span></span></td>
-			<td><span style="font-size:16px;"><span style="color:#696969;">OTP Nyrt .</span></span></td>
-		</tr>
-		<tr>
-			<td><span style="font-size:16px;"><span style="color:#696969;">Bank account nr. :</span></span></td>
-			<td><span style="font-size:16px;"><span style="color:#696969;">11722010-20001962-00000000</span></span></td>
-		</tr>
-		<tr>
-			<td><span style="font-size:16px;"><span style="color:#696969;">IBAN :</span></span></td>
-			<td><span style="font-size:16px;"><span style="color:#696969;">HU117220102000196200000000</span></span></td>
-		</tr>
-		<tr>
-			<td><span style="font-size:16px;"><span style="color:#696969;">Swift :</span></span></td>
-			<td><span style="font-size:16px;"><span style="color:#696969;">OTPVHUHB</span></span></td>
-		</tr>
-	</tbody>
-</table>
-</div>
-
-<div class="col s12 m8 l8 offset-l2 offset-m2">
-<h5><span style="color:#696969;"><strong>Bank details EUR</strong></span></h5>
-</div>
-
-<div class="col s12 m8 l8 offset-l2 offset-m2 table-responsive">
-<table class="highlight centered" id="company-details">
-	<tbody>
-		<tr>
-			<td><span style="font-size:16px;"><span style="color:#696969;">Name of the bank :</span></span></td>
-			<td><span style="font-size:16px;"><span style="color:#696969;">OTP Nyrt .</span></span></td>
-		</tr>
-		<tr>
-			<td><span style="font-size:16px;"><span style="color:#696969;">Bank account nr. :</span></span></td>
-			<td><span style="font-size:16px;"><span style="color:#696969;">11763220-11160885-00000000</span></span></td>
-		</tr>
-		<tr>
-			<td><span style="font-size:16px;"><span style="color:#696969;">IBAN :</span></span></td>
-			<td><span style="font-size:16px;"><span style="color:#696969;">HU25117632201116088500000000</span></span></td>
-		</tr>
-		<tr>
-			<td><span style="font-size:16px;"><span style="color:#696969;">Swift :</span></span></td>
-			<td><span style="font-size:16px;"><span style="color:#696969;">OTPVHUHB</span></span></td>
+			<td><span style="font-size:16px;"><span style="color:#696969;">www.hoffmannlogistics.hu</span></span></td>
 		</tr>
 	</tbody>
 </table>
@@ -138,19 +176,23 @@ Pagescontent.create(name: 'company', content:
 	<tbody>
 		<tr>
 			<td><span style="font-size:16px;"><span style="color:#696969;">Barnabás Tóth:</span></span></td>
-			<td><span style="font-size:16px;"><span style="color:#696969;">barna@hoffmannlogistics.com</span></span></td>
-		</tr>
-		<tr>
 			<td><span style="font-size:16px;"><span style="color:#696969;">+36 30 585 1256</span></span></td>
-			<td> </td>
 		</tr>
 		<tr>
-			<td><span style="font-size:16px;"><span style="color:#696969;">Fruzsina Hoffmann</span></span></td>
-			<td><span style="font-size:16px;"><span style="color:#696969;">fruzsi@hoffmannlogistics.com</span></span></td>
+			<td><span style="font-size:16px;"><span style="color:#696969;">Fruzsina Hoffmann:</span></span></td>
+			<td><span style="font-size:16px;"><span style="color:#696969;">+36 30 720 3032</span></span></td>
 		</tr>
 		<tr>
-			<td><span style="font-size:16px;"><span style="color:#696969;">+36 30 720 30 32</span></span></td>
-			<td> </td>
+			<td><span style="font-size:16px;"><span style="color:#696969;">László Meleg:</span></span></td>
+			<td><span style="font-size:16px;"><span style="color:#696969;">+36 30 281 3376</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:16px;"><span style="color:#696969;">Zoltán Sümeghy:</span></span></td>
+			<td><span style="font-size:16px;"><span style="color:#696969;">+36 30 391 4763</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:16px;"><span style="color:#696969;">Dora Czekmeiszter:</span></span></td>
+			<td><span style="font-size:16px;"><span style="color:#696969;">+36 30 311 7967</span></span></td>
 		</tr>
 	</tbody>
 </table>
