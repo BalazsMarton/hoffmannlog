@@ -28,6 +28,8 @@ Ckeditor.setup do |config|
   # Override parent controller CKEditor inherits from
   # By default: 'ApplicationController'
   # config.parent_controller = 'MyController'
+  
+  ##config.parent_controller = 'AdminController'
 
   # Asset model classes
   # config.picture_model { Ckeditor::Picture }

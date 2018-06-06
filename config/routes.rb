@@ -1,23 +1,31 @@
 Rails.application.routes.draw do
 
-  
-  
+#FRONT
+  scope module: 'front' do
+      root 'pages#home'
+      get 'home' => 'pages#home'
+      #get 'about' => 'pages#about'
+      get 'team' => 'pages#team'
+      #get 'contacts' => 'pages#contacts'
+      get 'carrier' => 'pages#carrier'
+      get 'company' => 'pages#company'
+  end
+
+#ADMIN  
+  scope :admin do
+    devise_for :admins, skip: :registrations
+  end
+
   namespace :admin do
+    root 'pagescontents#index'
     resources :collaborators
     resources :pagescontents, only: [:index, :show, :edit, :update]
   end
+ 
   mount Ckeditor::Engine => '/ckeditor'
-  get 'admin' => 'admin/pagescontents#index'
-  devise_for :admins, path: 'admin', skip: :registrations
   
   
-  root 'pages#home'
-  get 'home' => 'pages#home'
-  #get 'about' => 'pages#about'
-  get 'team' => 'pages#team'
-  #get 'contacts' => 'pages#contacts'
-  get 'carrier' => 'pages#carrier'
-  get 'company' => 'pages#company'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

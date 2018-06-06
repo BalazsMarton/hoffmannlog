@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hoffmannlog</title>
+  <title>Hoffmannlogadmin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'admin', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'admin', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= render 'layouts/adminnav' %>
+<%= render 'layouts/admin/adminnav' %>
 <div class="container" id="admin-content">
   <%= yield %>
 </div>
-<%= render 'layouts/adminfoot' %>
+<%= render 'layouts/admin/adminfoot' %>
 
 </body>
 </html>

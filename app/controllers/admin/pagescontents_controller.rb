@@ -1,4 +1,4 @@
-class Admin::PagescontentsController < Admin::AdminController
+class Admin::PagescontentsController < AdminController
 	before_action :set_pagescontent, only: [:show, :edit, :update]
 
 	def index

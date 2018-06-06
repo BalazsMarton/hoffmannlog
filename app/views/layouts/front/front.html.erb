@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hoffmannlog</title>
+  <title>Hoffmannlogfront</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', defer: Rails.env.production?, 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'front', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'front', defer: Rails.env.production?, 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= analytics_init if GoogleAnalytics.valid_tracker? %>
 </head>
 <body>
-<%= render 'layouts/navbar' %>
+<%= render 'layouts/front/navbar' %>
 <%= yield %>
-<%= render 'layouts/footer' %>
+<%= render 'layouts/front/footer' %>
 </body>
 </html>
