@@ -15,5 +15,7 @@
 # Ignore application configuration
 /config/application.yml
 
+/.ruby-version
+
 #Ignore RubyMine dot idea folder
 .idea/
