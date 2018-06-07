@@ -9,7 +9,7 @@ class Front::PagesController < FrontController
 	end
 
 	def team
-		@collaborators = Collaborator.all
+		@collaborators = Collaborator.all.order('position_nr ASC')
 	end
 
 	def contacts

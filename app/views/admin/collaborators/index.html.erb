@@ -14,6 +14,7 @@
     <table class="highlight">
       <thead>
         <tr>
+          <th>Pos nr.</th>
           <th>Image</th>
           <th>Name</th>
           <th>Title</th>
@@ -26,6 +27,7 @@
         <% @collaborators.each do |collaborator| %>
           <tr>
             <td><%= image_tag collaborator.image.thumb, class: 'responsive-img' %></td>
+            <td><%= collaborator.position_nr %></td>
             <td><%= collaborator.name %></td>
             <td><%= collaborator.title %></td>
             <td><%= collaborator.email %></td>

@@ -4,7 +4,7 @@ class Admin::CollaboratorsController < AdminController
   # GET /collaborators
   # GET /collaborators.json
   def index
-    @collaborators = Collaborator.all
+    @collaborators = Collaborator.all.order('position_nr ASC')
   end
 
   # GET /collaborators/1
@@ -69,6 +69,6 @@ class Admin::CollaboratorsController < AdminController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def collaborator_params
-      params.require(:collaborator).permit(:name, :title, :email, :image)
+      params.require(:collaborator).permit(:position_nr, :name, :title, :email, :image)
     end
 end

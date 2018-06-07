@@ -45,12 +45,13 @@ ActiveRecord::Schema.define(version: 20161105010228) do
   add_index "ckeditor_assets", ["type"], name: "index_ckeditor_assets_on_type", using: :btree
 
   create_table "collaborators", force: :cascade do |t|
-    t.string   "name",       limit: 255
-    t.string   "title",      limit: 255
-    t.string   "email",      limit: 255
-    t.string   "image",      limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.string   "name",        limit: 255
+    t.string   "title",       limit: 255
+    t.string   "email",       limit: 255
+    t.string   "image",       limit: 255
+    t.integer  "position_nr", limit: 4
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
   create_table "pagescontents", force: :cascade do |t|
