@@ -261,7 +261,7 @@ GEM
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
-    pg (1.0.0)
+    pg (0.20.0)
     puma (3.11.4)
     puma-heroku (1.0.0)
       puma (~> 3.0)
@@ -373,7 +373,7 @@ DEPENDENCIES
   meta-tags
   mini_magick
   mysql2 (>= 0.3.13, < 0.5)
-  pg (~> 1.0.0)
+  pg (~> 0.18)
   puma
   puma-heroku
   rails (= 4.2.10)
