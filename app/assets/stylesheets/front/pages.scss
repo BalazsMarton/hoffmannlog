@@ -5,6 +5,16 @@
 body{
 	background-color:white;
 }
+/*NAVBAR*/
+.side-nav {
+    background-color: rgba(13, 71, 161, 0.95) !important;
+}
+.side-nav li.active {
+    background-color: rgba(1, 87, 155, 0.7) !important;
+}
+.side-nav li>a {
+    color: rgba(255, 255, 255, 0.9);
+}
 /*FOOTER*/
 footer.page-footer{
 	margin:0;
