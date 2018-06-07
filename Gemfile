@@ -47,6 +47,9 @@ gem 'puma-heroku'
 #google analytics
 gem 'google-analytics-rails', '1.1.0'
 
+#seo
+gem 'meta-tags'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

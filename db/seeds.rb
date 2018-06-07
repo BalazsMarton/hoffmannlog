@@ -27,14 +27,14 @@ Pagescontent.create(name: 'WELCOME TO HOFFMANN LOGISTICS', content:
 </div>
 </div>
 ')
-Pagescontent.create(name: 'about', content: 
+Pagescontent.create(name: 'ABOUT', content: 
 	'
 	<h1 style="text-align: center;"><span style="color:#696969;">About Lorem ipsum</span></h1>
 
 <hr />
 <p style="text-align: justify;"><span style="color:#696969;">No prima illud mea, eu delenit gubergren vel. Nobis debitis invidunt quo ex, in mei pertinax assentior. Ei prima reque nonumes vis, augue delicatissimi no mel. Et prodesset delicatissimi usu.</span></p>
 ')
-Pagescontent.create(name: 'carrier', content: 
+Pagescontent.create(name: 'CARRIER', content: 
 	'
 	<div class="row" style="margin-bottom:0;">
 <div class="col s12 m12 l12" style="padding:0.25rem">
@@ -111,7 +111,7 @@ Jelentkezés  emailben: </span><a href="mailto:info@hoffmannlogistics.com"><spa
 </div>
 </div>
 ')
-Pagescontent.create(name: 'company', content: 
+Pagescontent.create(name: 'COMPANY', content: 
 	'
 	<div class="row">
 <div class="col s12 m12 l12">
