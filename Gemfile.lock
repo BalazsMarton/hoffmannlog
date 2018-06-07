@@ -373,7 +373,7 @@ DEPENDENCIES
   meta-tags
   mini_magick
   mysql2 (>= 0.3.13, < 0.5)
-  pg
+  pg (~> 1.0.0)
   puma
   puma-heroku
   rails (= 4.2.10)
